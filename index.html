@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         function escrever(){
-    const max = 1000;
-    const max2= 600;
-    const numeroAleatorio = Math.floor(Math.random()*max);
-    const numeroAleatorio2 = Math.floor(Math.random()*max2);
+            
+    const larguraTela = window.innerWidth-100;
+    const alturaTela = window.innerHeight-100;
+    const numeroAleatorio = Math.floor(Math.random()*larguraTela);
+    const numeroAleatorio2 = Math.floor(Math.random()*alturaTela);
     const botao = document.getElementById('botao');
     botao.setAttribute('style', 'left:'+numeroAleatorio+'px; top:'+numeroAleatorio2+'px;');
 }
