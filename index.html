@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function escrever(){
+    const max = 1000;
+    const max2= 600;
+    const numeroAleatorio = Math.floor(Math.random()*max);
+    const numeroAleatorio2 = Math.floor(Math.random()*max2);
+    const botao = document.getElementById('botao');
+    botao.setAttribute('style', 'left:'+numeroAleatorio+'px; top:'+numeroAleatorio2+'px;');
+}
+    </script>
+    <style>
+        #botao{
+    position: absolute;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background: gray;
+    margin: 10px;
+}
+p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover{
+    cursor: pointer;
+}
+    </style>
+    <title>Namora comigo?</title>
+</head>
+<body>
+    <main>
+        <p>Namora comigo?</p>
+        <a href="https://www.youtube.com/watch?v=izGwDsrQ1eQ"><button>Sim</button></a>
+    <button onmouseenter="escrever()" id="botao">Não</button>
+    </main>
+</body>
+</html>
+
+<!-- vaza daqui, pq ta lendo meu codigo maldito -->
